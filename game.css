@@ -1,0 +1,261 @@
+#game-block {
+    display: block;
+    margin: 25px 0 0 25px;
+    border: 5px solid #F5D5A2;
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+* {
+    font-family: 'Roboto';
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.container>.content {
+    margin: 25px;
+}
+
+#game-block::before {
+    background-image: url("./monks.jpg");
+    background-size: cover;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: 0.4;
+}
+
+.container input[type="number"],
+.container input[type="text"] {
+    padding: 7px 16px;
+    border-radius: 8px;
+}
+
+.container input[type="number"]:disabled,
+.container input[type="text"]:disabled,
+.container input[type="button"]:disabled,
+.container input[type="number"]:disabled:hover,
+.container input[type="text"]:disabled:hover,
+.container input[type="button"]:disabled:hover  {
+    cursor: not-allowed;
+    background-color: gray;
+}
+.container input:disabled:hover{
+    cursor: not-allowed;
+    
+}
+.container input[type="button"] {
+    color: #fff;
+    background-color: #3B3230;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: .25rem;
+    margin: 5px 0px;
+    cursor: pointer;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.container input[type="button"]:hover {
+    background-color: #408c99;
+}
+
+.container input[type="button"]:active {
+    position: relative;
+    top: 1px;
+}
+
+.container .win-block span {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+}
+
+.block {
+    display: block;
+    position: absolute;
+    width: 125px;
+    box-sizing: border-box;
+    height: 125px;
+    border: 1px solid #E0B570;
+    font-weight: bold;
+    font-size: 30px;
+    padding-left: 5px;
+    text-align: left;
+    color: white;
+    transition: left 0.1s, top 0.1s;
+}
+
+.block-1 {
+    background-image: url("./monks.jpg");
+    background-position: 0px 0px;
+}
+
+.block-2 {
+    background-image: url("./monks.jpg");
+    background-position: -125px 0px;
+}
+
+.block-3 {
+    background-image: url("./monks.jpg");
+    background-position: -250px 0px;
+}
+
+.block-4 {
+    background-image: url("./monks.jpg");
+    background-position: -375px 0px;
+}
+
+.block-5 {
+    background-image: url("./monks.jpg");
+    background-position: 0px -125px;
+}
+
+.block-6 {
+    background-image: url("./monks.jpg");
+    background-position: -125px -125px;
+}
+
+.block-7 {
+    background-image: url("./monks.jpg");
+    background-position: -250px -125px;
+}
+
+.block-8 {
+    background-image: url("./monks.jpg");
+    background-position: -375px -125px;
+}
+
+.block-9 {
+    background-image: url("./monks.jpg");
+    background-position: -0px -250px;
+}
+
+.block-10 {
+    background-image: url("./monks.jpg");
+    background-position: -125px -250px;
+}
+
+.block-11 {
+    background-image: url("./monks.jpg");
+    background-position: -250px -250px;
+}
+
+.block-12 {
+    background-image: url("./monks.jpg");
+    background-position: -375px -250px;
+}
+
+.block-13 {
+    background-image: url("./monks.jpg");
+    background-position: 0px -375px;
+}
+
+.block-14 {
+    background-image: url("./monks.jpg");
+    background-position: -125px -375px;
+}
+
+.block-15 {
+    background-image: url("./monks.jpg");
+    background-position: -250px -375px;
+}
+
+.x1y1 {
+    left: 0px;
+    top: 0px;
+}
+
+.x2y1 {
+    left: 125px;
+    top: 0px;
+}
+
+.x3y1 {
+    left: 250px;
+    top: 0px;
+}
+
+.x4y1 {
+    left: 375px;
+    top: 0px;
+}
+
+.x1y2 {
+    left: 0px;
+    top: 125px;
+}
+
+.x2y2 {
+    left: 125px;
+    top: 125px;
+}
+
+.x3y2 {
+    left: 250px;
+    top: 125px;
+}
+
+.x4y2 {
+    left: 375px;
+    top: 125px;
+}
+
+.x1y3 {
+    left: 0px;
+    top: 250px;
+}
+
+.x2y3 {
+    left: 125px;
+    top: 250px;
+}
+
+.x3y3 {
+    left: 250px;
+    top: 250px;
+}
+
+.x4y3 {
+    left: 375px;
+    top: 250px;
+}
+
+.x1y4 {
+    left: 0px;
+    top: 375px;
+}
+
+.x2y4 {
+    left: 125px;
+    top: 375px;
+}
+
+.x3y4 {
+    left: 250px;
+    top: 375px;
+}
+
+.x4y4 {
+    left: 375px;
+    top: 375px;
+}

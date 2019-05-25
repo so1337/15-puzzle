@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>15 puzzle</title>
+    <link rel="stylesheet" href="./game.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this game.</noscript>
+    <div class="container">
+        <div id="game-block" class="content"></div>
+        <div class="controls content">
+            <h3>Options</h3>
+            <label for="fast-shuffle">Fast shuffle</label>
+            <input type="checkbox" name="shuffle" id="fast-shuffle" checked /><br />
+            <input type="button" id="reset" value="Reset" /><br />
+            <input type="button" id="clear-score" value="Clear score" /></br>
+            <input type="button" id="clear-all-scores" value="Clear top scores" />
+            <h3>Difficulty</h3>
+            <input type="button" id="difficulty-test" value="Let's test it (5 shuffle steps)" /><br />
+            <input type="button" id="difficulty-easy" value="Easy (100 shuffle steps)" /><br />
+            <input type="button" id="difficulty-medium" value="Medium (300 shuffle steps)" /><br />
+            <input type="button" id="difficulty-hard" value="Hard (500 shuffle steps)" />
+            <h3>Custom Difficulty</h3>
+            <label for="number">Shuffle steps</label>
+            <input type="number" min="1" name="setps-amount" id="steps-amount" value="1" />
+            <input type="button" id="difficulty-custom" value="Shuffle!" />
+            <br />
+            <span>*custom difficulty wins won't go to top scores</span>
+        </div>
+        <div class="content">
+            <h3>Score</h3>
+            <span id="score">0</span>
+            <h3>Top scores</h3>
+            <div>
+                <p>Easy</p>
+                <ul id="easy-list" />
+            </div>
+            <div>
+                <p>
+                    Medium
+                </p>
+                <ul id="medium-list" />
+
+            </div>
+            <div>
+                <p>
+                    Hard
+                </p>
+                <ul id="hard-list" />
+            </div>
+            <div>
+                <p>
+                    Let's test it
+                </p>
+                <ul id="test-list" />
+            </div>
+            <div class="hidden win-block">
+                <span id="win-text">You win!</span>
+                <div class="claim-block hidden">
+                    <input type="text" name="nickname" id="score-nickname" placeholder="Your nickname" />
+                    <input type="button" id="claim-score" value="Claim score" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./game.js"></script>
+</body>
+
+</html>
