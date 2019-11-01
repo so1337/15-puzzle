@@ -67,7 +67,7 @@ function checkWin() {
       document.getElementById('win-text').innerHTML = 'Winner 🍾! <br /> Try new game on any difficulty to get listed in Top list';
       document.getElementsByClassName('claim-block')[0].classList.add('hidden');
     }
-    toggleWin('show');
+    toggleWin(true);
   } else {
     toggleWin(false);
   }
